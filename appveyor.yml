@@ -5,6 +5,9 @@ platform:
 
 cache:
   - node_modules
+  - '%APPDATA%\npm-cache'
+  - '%APPDATA%\.electron'
+  - '%APPDATA%\.electron-gyp'
   - '%USERPROFILE%\.electron'
   - '%USERPROFILE%\.electron-gyp'
 
