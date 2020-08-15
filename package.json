@@ -1,6 +1,6 @@
 {
   "name": "test-appveyor",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -9,7 +9,7 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
     "postinstall": "electron-builder install-app-deps",
-    "build": "electron-builder",
+    "build": "node -v && electron-builder",
     "release": "npm run build --publish onTagOrDraft"
   },
   "author": "",
