@@ -1,3 +1,27 @@
+image: Visual Studio 2017
+
+platform:
+  - x64
+
+cache:
+  - node_modules
+  - '%USERPROFILE%\.electron'
+
+init:
+  - git config --global core.autocrlf input
+
+install:
+  - ps: Install-Product node 12.18.2 x64
+  - git reset --hard HEAD
+  - yarn
+  - node --version
+
 build_script:
   - yarn dist
   - npm run publish
+
+test: off
+
+branches:
+  only:
+    - master
