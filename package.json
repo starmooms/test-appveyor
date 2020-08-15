@@ -1,6 +1,6 @@
 {
   "name": "test-appveyor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -8,7 +8,8 @@
     "start": "electron main.js",
     "pack": "electron-builder --dir",
     "dist": "electron-builder",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "electron-builder install-app-deps",
+    "publish": "electron-builder --publish onTagOrDraft"
   },
   "author": "",
   "license": "ISC",

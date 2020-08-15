@@ -1,0 +1,3 @@
+build_script:
+  - yarn dist
+  - npm run publish
