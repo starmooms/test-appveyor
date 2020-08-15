@@ -1,6 +1,6 @@
 {
   "name": "test-appveyor",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "main.js",
   "scripts": {
@@ -14,9 +14,6 @@
   "author": "",
   "license": "ISC",
   "build": {
-    "electronDownload": {
-      "mirror": "https://npm.taobao.org/mirrors/electron/"
-    },
     "appId": "com.xxx.app",
     "mac": {
       "target": [
